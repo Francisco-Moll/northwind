@@ -18,11 +18,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function displayProductDetails(product) {
         productDetails.innerHTML = `
-            <h2>${product.productName}</h2>
-            <p>ID: ${product.productId}</p>
-            <p>Price: $${Number(product.unitPrice).toFixed(2)}</p>
-            <p>Units in Stock: ${product.unitsInStock}</p>
-            <p>Supplier: ${product.supplier}</p>
+            <div>
+                <h2>${product.productName}</h2>
+                <p>ID: ${product.productId}</p>
+                <p>Price: $${Number(product.unitPrice).toFixed(2)}</p>
+                <p>Units in Stock: ${product.unitsInStock}</p>
+                <p>Supplier: ${product.supplier}</p>
+            </div>
         `;
     }
 });
