@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         productDetails.innerHTML = `
             <h2>${product.productName}</h2>
             <p>ID: ${product.productId}</p>
-            <p>Price: $${product.unitPrice}</p>
+            <p>Price: $${Number(product.unitPrice).toFixed(2)}</p>
             <p>Units in Stock: ${product.unitsInStock}</p>
             <p>Supplier: ${product.supplier}</p>
         `;

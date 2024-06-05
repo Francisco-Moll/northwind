@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div>
                 <h2>${product.productName}</h2>
                 <p>ID: ${product.productId}</p>
-                <p>Price: $${product.unitPrice}</p>
+                <p>Price: $${Number(product.unitPrice).toFixed(2)}</p>
                 <a href="details.html?id=${product.productId}">See details</a>
             </div>
         `).join('');
