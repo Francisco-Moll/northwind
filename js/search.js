@@ -11,11 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (value === 'all') {
             const products = await fetchProducts();
             displayProducts(products);
-        } else if (value === 'category') {
+        }
+        else if (value === 'category') {
             categorySection.style.display = 'block';
             const categories = await fetchCategories();
             populateCategories(categories);
-        } else {
+        }
+        else {
             categorySection.style.display = 'none';
         }
     });
