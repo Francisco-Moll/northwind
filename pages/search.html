@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="../index.html">Northwind Grocery</a></h1>
+    </header>
+    <main>
+        <section>
+            <label for="searchType">Search Type:</label>
+            <select id="searchType">
+                <option value="">Select one…</option>
+                <option value="category">Search by Category</option>
+                <option value="all">View All</option>
+            </select>
+        </section>
+        <section id="categorySection" style="display: none;">
+            <label for="category">Category:</label>
+            <select id="category">
+                <!-- Categories will be populated dynamically -->
+            </select>
+        </section>
+        <section id="products">
+            <!-- Products will be displayed here -->
+        </section>
+    </main>
+    <script src="../js/search.js"></script>
+</body>
+</html>
